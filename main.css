@@ -3,6 +3,19 @@ body {
   font-family: 'Amatic SC', cursive;
   background: lightgreen; }
 
+h1, h2, p {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  font-size: 50px; }
+
+h2 {
+  font-size: 45px; }
+
+p, a {
+  font-size: 25px; }
+
 body::after {
   content: "";
   background: url("assets/img/tree_bark.png");
@@ -16,20 +29,18 @@ body::after {
 
 .monster-card {
   margin: 100px auto;
-  width: 50%;
-  min-width: 345px;
+  width: 450px;
   height: 400px;
   background: #fff;
   text-align: center;
   box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.3); }
   .monster-card h1 {
     color: #777;
-    font-size: 50px;
     padding-top: 30px; }
   .monster-card .platform {
     position: relative;
     margin: 70px auto;
-    background: linear-gradient(to bottom right, lightgreen #64e764);
+    background: lightgreen;
     border-radius: 50%;
     height: 60px;
     width: 200px;
@@ -48,7 +59,6 @@ body::after {
     border-bottom: 3px solid #ff0381;
     border-radius: 30px;
     padding: 10px 20px;
-    text-transform: uppercase;
     margin-bottom: 30px;
     outline: none;
     cursor: pointer;
@@ -58,11 +68,48 @@ body::after {
     .monster-card button:active {
       border-bottom: 0; }
 
+.monster-card-wide {
+  display: none;
+  width: 520px;
+  height: 510px; }
+  .monster-card-wide .platform {
+    float: right;
+    margin: 250px 100px 0 0; }
+  .monster-card-wide .title-card {
+    border: double 10px lightgreen;
+    clear: both;
+    margin: 0 auto;
+    width: 90%;
+    height: 80px; }
+    .monster-card-wide .title-card p {
+      margin-top: 23px; }
+
+.monster-card-stats {
+  margin: 20px;
+  text-align: left;
+  height: 350px;
+  background: #fff;
+  color: #444;
+  border-radius: 10px;
+  float: left; }
+  .monster-card-stats h2 {
+    margin: 10px 0 10px 20px;
+    color: hotpink; }
+  .monster-card-stats ul {
+    margin-left: -20px; }
+    .monster-card-stats ul li {
+      list-style-type: none;
+      margin-top: 10px; }
+      .monster-card-stats ul li p {
+        color: hotpink; }
+      .monster-card-stats ul li span {
+        color: #444;
+        padding-left: 10px; }
+
 footer {
   margin: 0px;
   padding: 0px;
   text-align: center;
-  font-size: 25px;
   color: #444; }
   footer span {
     padding: 0 5px; }
