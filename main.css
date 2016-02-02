@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:700);
+body {
+  font-family: 'Amatic SC', cursive;
+  background: lightgreen; }
+
+body::after {
+  content: "";
+  background: url("assets/img/tree_bark.png");
+  opacity: 0.5;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.monster-card {
+  margin: 100px auto;
+  width: 50%;
+  min-width: 345px;
+  height: 400px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.3); }
+  .monster-card h1 {
+    color: #777;
+    font-size: 50px;
+    padding-top: 30px; }
+  .monster-card .platform {
+    position: relative;
+    margin: 70px auto;
+    background: linear-gradient(to bottom right, lightgreen, #64e764);
+    border-radius: 50%;
+    height: 60px;
+    width: 200px;
+    box-shadow: 0 30px 10px 0 rgba(0, 0, 0, 0.2); }
+    .monster-card .platform img {
+      position: absolute;
+      top: -60px;
+      left: 25px; }
+  .monster-card button {
+    font-family: 'Amatic SC', cursive;
+    color: #fff;
+    font-size: 30px;
+    height: 65px;
+    background: hotpink;
+    border: 0;
+    border-bottom: 3px solid #ff0381;
+    border-radius: 30px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    outline: none;
+    cursor: pointer;
+    transition: background .1s ease-in; }
+    .monster-card button:hover {
+      background: #ff9cce; }
+    .monster-card button:active {
+      border-bottom: 0; }
+
+footer {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  font-size: 25px;
+  color: #444; }
+  footer span {
+    padding: 0 5px; }
+  footer a:link {
+    color: hotpink; }
+  footer a:hover {
+    color: #333; }
+
+/*# sourceMappingURL=main.css.map */
