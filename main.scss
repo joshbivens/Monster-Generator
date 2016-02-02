@@ -33,7 +33,7 @@ body::after {
     .platform {
         position: relative;
         margin: 70px auto;
-        background: linear-gradient(to bottom right, lightgreen, darken(lightgreen, 10%));
+        background: linear-gradient(to bottom right, lightgreen darken(lightgreen, 10%));
         border-radius: 50%;
         height: 60px;
         width: 200px;

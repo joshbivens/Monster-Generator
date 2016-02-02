@@ -29,7 +29,7 @@ body::after {
   .monster-card .platform {
     position: relative;
     margin: 70px auto;
-    background: linear-gradient(to bottom right, lightgreen, #64e764);
+    background: linear-gradient(to bottom right, lightgreen #64e764);
     border-radius: 50%;
     height: 60px;
     width: 200px;
