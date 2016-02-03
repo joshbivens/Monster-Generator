@@ -1,19 +1,19 @@
 html
   head
     title Monster Generator
-    link(rel="stylesheet", href="main.css")
+    link(rel="stylesheet", href="dist/main.css")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.js")
   body
     .monster-card.monster-card-generate
       h1 MONSTER GENERATOR DELUXE
       
       .platform
-        img(src="assets/img/pinky.png", alt="pinky the newbie")
+        img(src="dist/assets/img/pinky.png", alt="pinky the newbie")
       
       button Generate
       
       
-    .monster-card.monster-card-wide
+    .monster-card.monster-card-wide.hidden
       .monster-card-stats
         img()
         h2 Stats:
@@ -53,4 +53,4 @@ html
       
       
       
-    script(src="js/app.js")
+    script(src="dist/js/app.js")

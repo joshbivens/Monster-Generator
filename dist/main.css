@@ -69,14 +69,13 @@ body::after {
       border-bottom: 0; }
 
 .monster-card-wide {
-  display: none;
   width: 520px;
   height: 510px; }
   .monster-card-wide .platform {
     float: right;
     margin: 250px 100px 0 0; }
   .monster-card-wide .title-card {
-    border: double 10px lightgreen;
+    border: 10px solid lightgreen;
     clear: both;
     margin: 0 auto;
     width: 90%;
@@ -117,5 +116,8 @@ footer {
     color: hotpink; }
   footer a:hover {
     color: #333; }
+
+.hidden {
+  display: none; }
 
 /*# sourceMappingURL=main.css.map */

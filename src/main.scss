@@ -2,7 +2,7 @@
 
 
 $box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.3);
-$db-border: double 10px lightgreen;
+$db-border: 10px solid lightgreen;
 
 body {
     font-family: 'Amatic SC', cursive;
@@ -36,10 +36,6 @@ body::after {
     bottom: 0;
     left: 0;
     right: 0;
-}
-
-.monster-card-generate {
-
 }
 
 .monster-card {
@@ -91,7 +87,6 @@ body::after {
 }
 
 .monster-card-wide {
-    display: none;
     width: 520px;
     height: 510px;
     .platform {
@@ -156,3 +151,8 @@ footer {
     }
 }                   
 
+// Utility
+
+.hidden {
+  display: none;
+} 
