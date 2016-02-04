@@ -3,16 +3,17 @@
   <head>
     <title>Monster Generator</title>
     <link rel="stylesheet" href="dist/main.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.2.1/lodash.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.js"></script>
   </head>
   <body>
     <div class="monster-card monster-card-generate">
-      <h1>MONSTER GENERATOR DELUXE</h1>
-      <div class="platform"><img src="dist/assets/img/pinky.png" alt="pinky the newbie"/></div>
+      <h1>MONSTA GENERATOR DELUXE!</h1>
+      <div class="platform"><img src="dist/assets/img/pinky.png" id="img" alt="pinky the newbie"/></div>
       <button>Generate</button>
     </div>
     <div class="monster-card monster-card-wide hidden">
-      <div class="monster-card-stats"><img/>
+      <div class="monster-card-stats">
         <h2>Stats:</h2>
         <ul> 
           <li> 
@@ -28,17 +29,18 @@
             <p>Amour:<span id="armour">50</span></p>
           </li>
           <li> 
-            <p>Skills:<span id="skills">Fire</span></p>
+            <p>Skill:<span id="skills">Fire</span></p>
           </li>
           <li> 
             <p>Speed:<span id="speed">50</span></p>
           </li>
         </ul>
-      </div>
+      </div><img id="monster-img"/>
       <div class="platform"></div>
       <div class="title-card">
-        <p>a random monster has appeared!</p>
+        <p id="title">a random monster has appeared!</p>
       </div>
+      <button>Regenerate</button>
     </div>
     <footer>
       <p>Created by </p><a href="http://www.twitter.com/thejoshbivens">@thejoshbivens</a><span>&</span><a href="http://www.twitter.com/iheartkode">@iheartkode </a>

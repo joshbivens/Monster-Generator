@@ -2,20 +2,20 @@ html
   head
     title Monster Generator
     link(rel="stylesheet", href="dist/main.css")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.2.1/lodash.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.js")
   body
     .monster-card.monster-card-generate
-      h1 MONSTER GENERATOR DELUXE
+      h1 MONSTA GENERATOR DELUXE!
       
       .platform
-        img(src="dist/assets/img/pinky.png", alt="pinky the newbie")
+        img(src="dist/assets/img/pinky.png", id="img", alt="pinky the newbie")
       
       button Generate
       
       
     .monster-card.monster-card-wide.hidden
       .monster-card-stats
-        img()
         h2 Stats:
         ul 
           li 
@@ -31,16 +31,17 @@ html
             p Amour:
               span#armour 50
           li 
-            p Skills:
+            p Skill:
               span#skills Fire
           li 
             p Speed:
               span#speed 50
-    
+      img#monster-img
       .platform
       
       .title-card
-        p a random monster has appeared!
+        p#title a random monster has appeared!
+      button Regenerate
        
       
     footer

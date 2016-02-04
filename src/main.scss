@@ -2,7 +2,7 @@
 
 
 $box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.3);
-$db-border: 10px solid lightgreen;
+$db-border: 10px double lightgreen;
 
 body {
     font-family: 'Amatic SC', cursive;
@@ -88,20 +88,30 @@ body::after {
 
 .monster-card-wide {
     width: 520px;
-    height: 510px;
+    height: 600px;
+    position: relative;
     .platform {
         float: right;
-        margin: 250px 100px 0 0;
+        margin: 250px 80px 0 0;
+    }
+    img {
+        position: absolute;
+        top: 150px;
+        right: 140px;
+        z-index: 5;
     }
     .title-card {
-        border: $db-border;
         clear:both;
         margin: 0 auto;
         width: 90%;
         height: 80px;
         p {
-            margin-top: 23px;
+            margin-top: 30px;
+            font-size: 45px; 
         }
+    }
+    button {
+        margin-top: 20px;
     }
 }
 

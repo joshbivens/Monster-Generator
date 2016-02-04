@@ -70,26 +70,20 @@ body::after {
 
 .monster-card-wide {
   width: 520px;
-  height: 600px;
-  position: relative; }
+  height: 510px; }
   .monster-card-wide .platform {
     float: right;
-    margin: 250px 80px 0 0; }
+    margin: 0; }
   .monster-card-wide img {
-    position: absolute;
-    top: 150px;
-    right: 140px;
-    z-index: 5; }
+    float: right; }
   .monster-card-wide .title-card {
+    border: 10px solid lightgreen;
     clear: both;
     margin: 0 auto;
     width: 90%;
     height: 80px; }
     .monster-card-wide .title-card p {
-      margin-top: 30px;
-      font-size: 45px; }
-  .monster-card-wide button {
-    margin-top: 20px; }
+      margin-top: 23px; }
 
 .monster-card-stats {
   margin: 20px;
@@ -128,4 +122,4 @@ footer {
 .hidden {
   display: none; }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main:css.map */
